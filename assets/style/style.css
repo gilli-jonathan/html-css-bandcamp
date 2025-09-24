@@ -136,6 +136,12 @@ main {
     .left {
         width: 70%;
         overflow-y: auto;
+
+        .genere {
+            color: grey;
+            font-weight: 100;
+            font-size: 0.9rem;
+        }
     }
 
     .rigth {
