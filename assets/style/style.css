@@ -21,7 +21,7 @@ body {
     --color-white: #ffffff;
 }
 
-/* .debug {
+ .debug {
     background-color: rgb(137, 138, 138);
 
     & * {
@@ -43,7 +43,7 @@ body {
     .rigth {
         background-color: chocolate;
     }
-} */
+} 
 
 /* #endregion Utilities */
 
@@ -75,6 +75,22 @@ body {
 
 .nav-menu {
     justify-content: space-between;
+
+    .left-menu {
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .rigth-menu {
+        align-items: center;
+        gap: 1rem;
+      
+        a {
+            color: var(--color-white);
+            text-decoration: none;
+        }
+        
+    }
 }
 
 .bottom {
@@ -82,13 +98,14 @@ body {
     display: flex;
 
     .left {
-        width: 75%;
+        width: 70%;
         overflow-y: auto;
     }
 
     .rigth {
-        width: 25%;
+        width: 30%;
         padding: 1rem;
+        overflow-y: auto;
     }
 
     .album-card {
