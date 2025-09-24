@@ -4,13 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--color-background);
-}
 
 :root {
     --top-heigth: 112px;
@@ -21,7 +17,7 @@ body {
     --color-white: #ffffff;
 }
 
- .debug {
+/* .debug {
     background-color: rgb(137, 138, 138);
 
     & * {
@@ -43,7 +39,7 @@ body {
     .rigth {
         background-color: chocolate;
     }
-} 
+}  */
 
 /* #endregion Utilities */
 
@@ -65,10 +61,21 @@ body {
 
 /* #endregion Gerelas Rules */
 
+body {
+    background-color: var(--color-background);
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: hidden;
+    height: 100vh;
+}
 
 .top {
     height: var(--top-heigth);
-    .search{
+
+    .search {
         background-color: var(--color-back-ligth);
     }
 }
@@ -84,18 +91,19 @@ body {
     .rigth-menu {
         align-items: center;
         gap: 1rem;
-      
+
         a {
             color: var(--color-white);
             text-decoration: none;
         }
-        
+
     }
 }
 
 .bottom {
     height: calc(100% - var(--top-heigth));
     display: flex;
+    color: var(--color-white);
 
     .left {
         width: 70%;
