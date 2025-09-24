@@ -18,7 +18,7 @@ body {
 .debug {
     background-color: rgb(137, 138, 138);
 
-    & * {
+    & *{
         border: 1px dotted black;
     }
 
@@ -38,7 +38,6 @@ body {
         background-color: chocolate;
     }
 }
-
 /* #endregion Utilities */
 
 
@@ -49,14 +48,13 @@ body {
     margin: auto;
 }
 
-.d-flex {
+.d-flex{
     display: flex;
 }
 
-.f-wrap {
+.f-wrap{
     flex-wrap: wrap;
 }
-
 /* #endregion Gerelas Rules */
 
 
@@ -64,14 +62,13 @@ body {
     height: var(--top-heigth);
 }
 
-.nav-menu {
-    justify-content: space-between;
-}
+ .nav-menu{
+        justify-content: space-between;
+    }
 
 .bottom {
     height: calc(100% - var(--top-heigth));
     display: flex;
-    gap: 1rem;
 
     .left {
         width: 65%;
@@ -81,4 +78,10 @@ body {
     .rigth {
         width: 35%;
     }
+
+    .album-card {
+        width: calc(100% / 4);
+    }
+
+
 }
