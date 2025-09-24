@@ -4,6 +4,54 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+:root {
+    --top-heigth: 112px
+}
+
 .debug {
     border: 1px dotted black;
+
+    
+    .top {
+        background-color: rgb(185, 67, 201);
+    }
+
+    .bottom {
+        background-color: rgb(56, 225, 96);
+    }
+
+    .left {
+        background-color: aqua;
+    }
+
+    .rigth {
+        background-color: chocolate;
+    }
 }
+
+
+
+.top {
+    height: var(--top-heigth);
+}
+
+.bottom {
+    height: calc(100% - var(--top-heigth));
+    display: flex;
+    gap: 1rem;
+
+    .left {
+        width: 65%;
+        overflow-y: auto;
+    }
+
+    .rigth {
+        width: 35%;
+    }
+}
+
