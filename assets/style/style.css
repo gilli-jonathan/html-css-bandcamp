@@ -9,7 +9,7 @@
 
 
 :root {
-    --top-heigth: 112px;
+    --top-heigth: 140px;
     --color-background: #222222;
     --color-back-ligth: #2b2b2b;
     --color-search-ligth: #464646;
@@ -72,33 +72,46 @@ main {
     height: 100vh;
 }
 
+/* #region Header */
 .top {
     height: var(--top-heigth);
-
-    .search {
-        background-color: var(--color-back-ligth);
-    }
 }
+
 
 .nav-menu {
     justify-content: space-between;
+    padding: 3px 0;
 
     .left-menu {
-        padding: 1rem 0;
+        align-items: center;
         gap: 1rem;
     }
 
     .rigth-menu {
         align-items: center;
-        gap: 1rem;
+
 
         a {
             color: var(--color-white);
             text-decoration: none;
+            padding: 7px 9px;
+            align-items: center;
         }
 
     }
 }
+
+.search {
+    background-color: var(--color-back-ligth);
+
+    & div {
+        padding: 1rem;
+    }
+}
+
+/* #endregion Header */
+
+
 
 .bottom {
     height: calc(100% - var(--top-heigth));
