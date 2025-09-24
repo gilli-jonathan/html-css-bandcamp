@@ -9,7 +9,7 @@
 
 
 :root {
-    --top-heigth: 140px;
+    --top-heigth: 120px;
     --color-background: #222222;
     --color-back-ligth: #2b2b2b;
     --color-search-ligth: #464646;
@@ -70,6 +70,7 @@ body {
 main {
     overflow: hidden;
     height: 100vh;
+     margin-top: 1rem;
 }
 
 /* #region Header */
@@ -80,16 +81,23 @@ main {
 
 .nav-menu {
     justify-content: space-between;
-    padding: 3px 0;
+    padding: 10px 0;
 
     .left-menu {
         align-items: center;
-        gap: 1rem;
+        gap: 1rem;  
+        
+        input {
+            background-color: var(--color-search-dark);
+            border: none;
+            width: 250px;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
     }
 
     .rigth-menu {
         align-items: center;
-
 
         a {
             color: var(--color-white);
@@ -97,12 +105,19 @@ main {
             padding: 7px 9px;
             align-items: center;
         }
-
     }
 }
 
 .search {
     background-color: var(--color-back-ligth);
+
+     input {
+            background-color: var(--color-search-ligth);
+            border: 1px solid grey;
+            width: 356px;
+            padding: 0.5rem;
+            border-radius: 20px;
+        }
 
     & div {
         padding: 1rem;
@@ -125,13 +140,13 @@ main {
 
     .rigth {
         width: 30%;
-        padding: 1rem;
+        padding: 0 1rem;
         overflow-y: auto;
     }
 
     .album-card {
         width: calc(100% / 4);
-        padding: 5px;
+        padding: 0 8px 25px;
     }
 
     img {
