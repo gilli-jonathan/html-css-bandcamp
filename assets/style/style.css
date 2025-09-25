@@ -275,16 +275,16 @@ main {
 
 .flex-item {
     width: 49.5%;
-
 }
 
-#biopic span{
+#biopic span {
     align-content: center;
 }
 
-aside :last-child {
-    padding-bottom: 1rem;
-}
+
+
+
+
 
 /* #endregion bottom */
 
