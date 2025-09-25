@@ -93,7 +93,9 @@
 
 .btn-white {
     background-color: var(--color-white);
-    border: none;
+    &:hover {
+        border-color: rgb(69, 68, 68);
+    }
 
     a {
         background-color: var(--color-white);
