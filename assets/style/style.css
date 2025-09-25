@@ -66,19 +66,34 @@
 .btn {
 
     border: 1px solid currentColor;
-    display: inline-block;
+
     padding: 0.6rem;
     gap: 10px;
+    border-radius: 4px;
+    width: 180px;
+    text-align: center;
+    margin-bottom: 1rem;
 
-    a{
-    background-color: var(--color-background);
-    text-decoration: none;
-    color: var(--color-white);
+    a {
+        background-color: var(--color-background);
+        text-decoration: none;
+        color: var(--color-white);
     }
-
 
 }
 
+.btn-white {
+    background-color: var(--color-white);
+    a {
+        background-color: var(--color-white);
+        color: var(--color-background);
+    }
+}
+
+.menu-r-btn {
+
+ 
+}
 /* #endregion Gerelas Rules */
 
 body {
@@ -90,7 +105,7 @@ body {
 main {
     overflow: hidden;
     height: 100vh;
-     margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 /* #region Header */
@@ -104,8 +119,8 @@ main {
 
     .left-menu {
         align-items: center;
-        gap: 1rem;  
-        
+        gap: 1rem;
+
         input {
             background-color: var(--color-search-dark);
             border: none;
@@ -130,13 +145,13 @@ main {
 .search {
     background-color: var(--color-back-ligth);
 
-     input {
-            background-color: var(--color-search-ligth);
-            border: 1px solid grey;
-            width: 356px;
-            padding: 0.5rem;
-            border-radius: 20px;
-        }
+    input {
+        background-color: var(--color-search-ligth);
+        border: 1px solid grey;
+        width: 356px;
+        padding: 0.5rem;
+        border-radius: 20px;
+    }
 
     & div {
         padding: 1rem;
@@ -144,7 +159,6 @@ main {
 }
 
 /* #endregion Header */
-
 
 .bottom {
     height: calc(100% - var(--top-heigth));
@@ -167,9 +181,13 @@ main {
         padding: 0 1rem;
         overflow-y: auto;
         font-size: 0.8rem;
-        
-        div{
+
+        div {
             margin-bottom: 1rem;
+        }
+
+        .s-between div {
+            margin-bottom: 0;
         }
 
         .play {
@@ -186,19 +204,42 @@ main {
             margin-right: 0.5rem;
             display: inline-block;
         }
-
     }
-
-    .album-card {
-        width: calc(100% / 4);
-        padding: 0 8px 25px;
-    }
-
-    img {
-        width: 100%;
-    }
-
 
 }
+
+.album-card {
+    width: calc(100% / 4);
+    padding: 0 8px 25px;
+}
+
+img {
+    width: 100%;
+}
+
 /* /Left Menu */
 
+/* #region Media responsive */
+@media screen and (max-width: 744px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .bottom {
+        .album-card {
+            width: calc(100% / 2);
+        }
+
+        .rigth {
+            width: 40%;
+        }
+
+    }
+}
+
+#biopic {
+    margin-bottom: 1rem;
+}
+
+}
