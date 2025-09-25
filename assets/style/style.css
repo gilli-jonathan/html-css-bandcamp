@@ -73,6 +73,18 @@
     text-align: center;
     margin-bottom: 1rem;
 
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        background-color: rgb(69, 68, 68);
+
+        a {
+            text-decoration: underline;
+            background-color: rgb(69, 68, 68);
+
+        }
+    }
+
     a {
         background-color: var(--color-background);
         text-decoration: none;
@@ -83,6 +95,7 @@
 
 .btn-white {
     background-color: var(--color-white);
+    border: none;
 
     a {
         background-color: var(--color-white);
@@ -219,8 +232,10 @@ main {
     position: relative;
 
     &:hover {
+        cursor: pointer;
+
         .play-icon {
-        opacity: 100%;
+            opacity: 100%;
         }
     }
 
