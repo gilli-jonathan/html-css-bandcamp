@@ -278,6 +278,10 @@ main {
 
 }
 
+#biopic span{
+    align-content: center;
+}
+
 /* #endregion bottom */
 
 /* #region Media responsive */
