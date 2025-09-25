@@ -43,7 +43,6 @@
 
 /* #endregion Utilities */
 
-
 /* #region Gerelas Rules */
 
 .container {
@@ -91,7 +90,6 @@
     }
 }
 
-.menu-r-btn {}
 
 /* #endregion Gerelas Rules */
 
@@ -112,9 +110,9 @@ main {
     height: var(--top-heigth);
 }
 
-   #search-mobile {
-        display: none;
-    }
+#search-mobile {
+    display: none;
+}
 
 
 .nav-menu {
@@ -139,8 +137,12 @@ main {
         a {
             color: var(--color-white);
             text-decoration: none;
-            padding: 7px 9px;
-            align-items: center;
+            padding: 18px 10px;
+
+            &:hover {
+                text-decoration: underline;
+                background-color: var(--color-search-ligth);
+            }
         }
     }
 }
@@ -151,7 +153,7 @@ main {
     input {
         background-color: var(--color-search-ligth);
         border: 1px solid grey;
-        width: 356px;
+        width: 380px;
         padding: 0.5rem;
         border-radius: 20px;
     }
@@ -162,6 +164,8 @@ main {
 }
 
 /* #endregion Header */
+
+/* #region bottom */
 
 .bottom {
     height: calc(100% - var(--top-heigth));
@@ -220,13 +224,19 @@ img {
     width: 100%;
 }
 
-/* /Left Menu */
+/* #endregion bottom */
 
 /* #region Media responsive */
 @media screen and (max-width: 744px) {
 
     #search-mobile {
         display: none;
+    }
+
+    .search {
+        input {
+            min-width: 380px;
+        }
     }
 
     .container {
@@ -256,6 +266,12 @@ img {
         display: inline-block;
     }
 
+    .search {
+        input {
+            width: 100%;
+        }
+    }
+
     .left-menu {
         span {
             display: none;
@@ -273,3 +289,5 @@ img {
     }
 
 }
+
+/* #endregion Media responsive */
