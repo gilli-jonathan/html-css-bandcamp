@@ -215,6 +215,36 @@ main {
 
 }
 
+.card-img {
+    position: relative;
+
+    &:hover {
+        .play-icon {
+        opacity: 100%;
+        }
+    }
+
+    .play-icon {
+
+        position: absolute;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 35px;
+        top: 75%;
+        left: 10%;
+        opacity: 0;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+
+    &:hover {
+
+        display: block;
+
+    }
+}
+
 .album-card {
     width: calc(100% / 4);
     padding: 0 8px 25px;
@@ -275,7 +305,7 @@ main {
     .search {
         input {
             width: 100%;
-    
+
         }
     }
 
