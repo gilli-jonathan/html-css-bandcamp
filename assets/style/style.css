@@ -236,10 +236,25 @@ img {
         }
 
     }
+
+    #biopic {
+    margin-bottom: 1rem;
+}
 }
 
-#biopic {
-    margin-bottom: 1rem;
+
+@media screen and (max-width: 600px) {
+
+    
+
+.bottom {
+    .left {
+        width: 100%;
+    }
+
+    aside {
+    display: none;
+}
 }
 
 }
