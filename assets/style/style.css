@@ -220,8 +220,14 @@ main {
     padding: 0 8px 25px;
 }
 
-img {
+.bottom img {
     width: 100%;
+
+    border: 1px solid var(--color-search-ligth);
+
+    &:hover {
+        border: 0;
+    }
 }
 
 /* #endregion bottom */
