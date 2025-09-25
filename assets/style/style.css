@@ -67,9 +67,7 @@
     border: 1px solid currentColor;
 
     padding: 0.6rem;
-    gap: 10px;
     border-radius: 4px;
-    width: 180px;
     text-align: center;
     margin-bottom: 1rem;
 
@@ -275,6 +273,11 @@ main {
     }
 }
 
+.flex-item {
+    width: 49.5%;
+
+}
+
 /* #endregion bottom */
 
 /* #region Media responsive */
@@ -308,6 +311,15 @@ main {
     #biopic {
         margin-bottom: 1rem;
     }
+
+    #btn-album {
+        gap: 0.5rem;
+
+        .flex-item {
+            width: 100%;
+        }
+    }
+
 }
 
 
