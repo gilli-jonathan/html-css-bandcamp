@@ -241,7 +241,7 @@ main {
 
     .search {
         input {
-            min-width: 380px;
+            width: 380px;
         }
     }
 
@@ -275,6 +275,7 @@ main {
     .search {
         input {
             width: 100%;
+    
         }
     }
 
