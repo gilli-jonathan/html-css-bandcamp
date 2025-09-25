@@ -9,7 +9,7 @@
 
 
 :root {
-    --top-heigth: 125px;
+    --top-heigth: 150px;
     --color-background: #222222;
     --color-back-ligth: #2b2b2b;
     --color-search-ligth: #464646;
@@ -93,6 +93,7 @@
 
 .btn-white {
     background-color: var(--color-white);
+
     &:hover {
         border-color: rgb(69, 68, 68);
     }
@@ -179,7 +180,6 @@ main {
 /* #endregion Header */
 
 /* #region bottom */
-
 .bottom {
     height: calc(100% - var(--top-heigth));
     display: flex;
@@ -283,12 +283,39 @@ main {
     align-content: center;
 }
 
-
-
-
-
-
 /* #endregion bottom */
+
+/* #region scrollbar test */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-search-ligth);
+    border-radius: 20px;
+}
+
+/* .left:hover::-webkit-scrollbar-thumb {
+    background: var(--color-search-ligth);
+    border-radius: 10px;
+}
+
+.rigth:hover::-webkit-scrollbar-thumb {
+    background: var(--color-search-ligth);
+    border-radius: 10px;
+} */
+
+
+
+
+/* #endregion scrollbar test */
+
+
 
 /* #region Media responsive */
 @media screen and (max-width: 744px) {
