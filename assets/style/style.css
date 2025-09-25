@@ -84,16 +84,15 @@
 
 .btn-white {
     background-color: var(--color-white);
+
     a {
         background-color: var(--color-white);
         color: var(--color-background);
     }
 }
 
-.menu-r-btn {
+.menu-r-btn {}
 
- 
-}
 /* #endregion Gerelas Rules */
 
 body {
@@ -112,6 +111,10 @@ main {
 .top {
     height: var(--top-heigth);
 }
+
+   #search-mobile {
+        display: none;
+    }
 
 
 .nav-menu {
@@ -222,6 +225,10 @@ img {
 /* #region Media responsive */
 @media screen and (max-width: 744px) {
 
+    #search-mobile {
+        display: none;
+    }
+
     .container {
         width: 95%;
     }
@@ -238,23 +245,31 @@ img {
     }
 
     #biopic {
-    margin-bottom: 1rem;
-}
+        margin-bottom: 1rem;
+    }
 }
 
 
 @media screen and (max-width: 600px) {
 
-    
-
-.bottom {
-    .left {
-        width: 100%;
+    #search-mobile {
+        display: inline-block;
     }
 
-    aside {
-    display: none;
-}
-}
+    .left-menu {
+        span {
+            display: none;
+        }
+    }
+
+    .bottom {
+        .left {
+            width: 100%;
+        }
+
+        aside {
+            display: none;
+        }
+    }
 
 }
