@@ -47,7 +47,7 @@
 /* #region Gerelas Rules */
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -57,6 +57,26 @@
 
 .f-wrap {
     flex-wrap: wrap;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.btn {
+
+    border: 1px solid currentColor;
+    display: inline-block;
+    padding: 0.6rem;
+    gap: 10px;
+
+    a{
+    background-color: var(--color-background);
+    text-decoration: none;
+    color: var(--color-white);
+    }
+
+
 }
 
 /* #endregion Gerelas Rules */
@@ -80,7 +100,6 @@ main {
 
 
 .nav-menu {
-    justify-content: space-between;
     padding: 10px 0;
 
     .left-menu {
@@ -127,7 +146,6 @@ main {
 /* #endregion Header */
 
 
-
 .bottom {
     height: calc(100% - var(--top-heigth));
     display: flex;
@@ -148,6 +166,27 @@ main {
         width: 30%;
         padding: 0 1rem;
         overflow-y: auto;
+        font-size: 0.8rem;
+        
+        div{
+            margin-bottom: 1rem;
+        }
+
+        .play {
+            font-size: 50px;
+        }
+
+        .mu-pic {
+            background-image: url(../img/pic-img.jpg);
+            background-size: cover;
+            background-position: 0%;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            display: inline-block;
+        }
+
     }
 
     .album-card {
@@ -161,3 +200,5 @@ main {
 
 
 }
+/* /Left Menu */
+
